@@ -1,0 +1,341 @@
+2020-02-03 16:22:01 [scrapy] DEBUG: Crawled (200) <GET https://oilprice.com/robots.txt> (referer: None)
+2020-02-03 16:22:02 [scrapy] DEBUG: Crawled (200) <GET https://oilprice.com/Latest-Energy-News/World-News> (referer: None)
+2020-02-03 16:22:02 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Enbridge-Wants-To-Change-Terms-On-Canadas-Largest-Pipeline-But-Not-Everyone-Ag.html', 'date': 'Jan 31, 2020 at 16:57 ', 'time_zone': 'CST'}
+2020-02-03 16:22:02 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Chevron-Swings-To-66B-Loss-After-Huge-Shale-Gas-Write-Off.html', 'date': 'Jan 31, 2020 at 16:19 ', 'time_zone': 'CST'}
+2020-02-03 16:22:02 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Russian-Oil-Firm-Could-Sign-Fuel-For-Diamonds-Deal-In-This-African-Nation.html', 'date': 'Jan 31, 2020 at 14:38 ', 'time_zone': 'CST'}
+2020-02-03 16:22:02 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/South-Sudan-Welcomes-Russian-Firms-To-Its-Oil-Gas-Sector.html', 'date': 'Jan 31, 2020 at 12:21 ', 'time_zone': 'CST'}
+2020-02-03 16:22:02 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Enis-Libyan-JV-Loses-155000-Bpd-because-Of-Continued-Blockade.html', 'date': 'Jan 31, 2020 at 10:26 ', 'time_zone': 'CST'}
+2020-02-03 16:22:02 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/US-Unexpectedly-Lifts-Iran-Related-Sanctions-On-Chinese-Tanker-Company.html', 'date': 'Jan 31, 2020 at 09:11 ', 'time_zone': 'CST'}
+2020-02-03 16:22:02 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Coronavirus-Halts-Flow-Of-Latin-American-Oil-To-China.html', 'date': 'Jan 30, 2020 at 17:20 ', 'time_zone': 'CST'}
+2020-02-03 16:22:02 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Canadas-Oil-Sands-Investment-To-Rise-For-The-First-Time-Since-2014.html', 'date': 'Jan 30, 2020 at 16:26 ', 'time_zone': 'CST'}
+2020-02-03 16:22:02 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/UK-Oil-Gas-Industry-Embraces-Net-Zero-Emissions-Plan-By-2050.html', 'date': 'Jan 30, 2020 at 12:56 ', 'time_zone': 'CST'}
+2020-02-03 16:22:02 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Russian-Pipeline-Owner-Faces-1B-Claims-Over-Tainted-Oil.html', 'date': 'Jan 30, 2020 at 12:12 ', 'time_zone': 'CST'}
+2020-02-03 16:22:03 [scrapy] DEBUG: Crawled (200) <GET https://oilprice.com/Latest-Energy-News/World-News/Page-2.html> (referer: https://oilprice.com/Latest-Energy-News/World-News)
+2020-02-03 16:22:03 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-2.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/15-Billion-Oil-Sands-Project-Might-Not-Go-Ahead-Even-If-Trudeau-Approves-It.html', 'date': 'Jan 30, 2020 at 09:51 ', 'time_zone': 'CST'}
+2020-02-03 16:22:03 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-2.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Petrobras-Suspends-All-Employee-Travel-To-China.html', 'date': 'Jan 30, 2020 at 09:33 ', 'time_zone': 'CST'}
+2020-02-03 16:22:03 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-2.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/OPEC-May-Move-Up-Meeting-As-Coronavirus-Continues-To-Batter-Oil-Prices.html', 'date': 'Jan 29, 2020 at 17:57 ', 'time_zone': 'CST'}
+2020-02-03 16:22:03 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-2.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Pemex-Jockeys-To-Operate-Zama-Area-But-What-About-Talos-Energy.html', 'date': 'Jan 29, 2020 at 17:44 ', 'time_zone': 'CST'}
+2020-02-03 16:22:03 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-2.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/UKs-Guardian-Bans-Ads-From-Oil-Gas-Firms-In-Worlds-Media-First.html', 'date': 'Jan 29, 2020 at 17:37 ', 'time_zone': 'CST'}
+2020-02-03 16:22:03 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-2.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Eni-Shell-Catch-a-Break-in-Trial-Over-Alleged-Nigeria-Oil-Bribes.html', 'date': 'Jan 29, 2020 at 16:47 ', 'time_zone': 'CST'}
+2020-02-03 16:22:03 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-2.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/US-Sanctions-Bar-Iran-From-Accessing-5B-Energy-Export-Revenue.html', 'date': 'Jan 29, 2020 at 12:49 ', 'time_zone': 'CST'}
+2020-02-03 16:22:03 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-2.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/GM-To-Spend-22-Billion-On-Electric-Vehicle-Production-In-Detroit.html', 'date': 'Jan 29, 2020 at 11:06 ', 'time_zone': 'CST'}
+2020-02-03 16:22:03 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-2.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/UKs-Clean-Energy-Sector-Desperately-Needs-Fresh-Talent.html', 'date': 'Jan 29, 2020 at 10:48 ', 'time_zone': 'CST'}
+2020-02-03 16:22:03 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-2.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Houthis-Claim-Responsibility-For-Todays-Failed-Air-Strike-On-Aramco-Facilities.html', 'date': 'Jan 29, 2020 at 10:45 ', 'time_zone': 'CST'}
+2020-02-03 16:22:03 [scrapy] DEBUG: Crawled (200) <GET https://oilprice.com/Latest-Energy-News/World-News/Page-3.html> (referer: https://oilprice.com/Latest-Energy-News/World-News/Page-2.html)
+2020-02-03 16:22:04 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-3.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/New-Regulations-Could-Favor-Oil-Speculators.html', 'date': 'Jan 29, 2020 at 09:07 ', 'time_zone': 'CST'}
+2020-02-03 16:22:04 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-3.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Is-the-Virus-Induced-Oil-Price-Slide-Finally-Over.html', 'date': 'Jan 29, 2020 at 09:03 ', 'time_zone': 'CST'}
+2020-02-03 16:22:04 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-3.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Rise-On-Surprise-Crude-Draw.html', 'date': 'Jan 28, 2020 at 15:49 ', 'time_zone': 'CST'}
+2020-02-03 16:22:04 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-3.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Exxon-Signs-Deals-With-Egypt-For-Oil-Gas-Exploration-in-East-Mediterranean.html', 'date': 'Jan 28, 2020 at 14:00 ', 'time_zone': 'CST'}
+2020-02-03 16:22:04 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-3.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Hess-Raises-2020-Capex-To-3B-To-Develop-Bakken-Guyana.html', 'date': 'Jan 28, 2020 at 13:44 ', 'time_zone': 'CST'}
+2020-02-03 16:22:04 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-3.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Russias-Oil-Giant-Lukoil-Plans-100B-Investment-Over-Ten-Years.html', 'date': 'Jan 28, 2020 at 13:02 ', 'time_zone': 'CST'}
+2020-02-03 16:22:04 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-3.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Miners-Eye-New-Tech-To-Cut-Diesel-Dependence.html', 'date': 'Jan 28, 2020 at 10:51 ', 'time_zone': 'CST'}
+2020-02-03 16:22:04 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-3.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Barclays-Sees-Lower-Oil-Prices-In-2020-As-Coronavirus-Spreads.html', 'date': 'Jan 28, 2020 at 10:44 ', 'time_zone': 'CST'}
+2020-02-03 16:22:04 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-3.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/ExxonMobil-Stock-Hits-Decade-Low.html', 'date': 'Jan 28, 2020 at 09:13 ', 'time_zone': 'CST'}
+2020-02-03 16:22:04 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-3.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/2019s-Rocky-Oil-Prices-Made-The-Worlds-Biggest-Traders-Billions.html', 'date': 'Jan 27, 2020 at 16:37 ', 'time_zone': 'CST'}
+2020-02-03 16:22:04 [scrapy] DEBUG: Crawled (200) <GET https://oilprice.com/Latest-Energy-News/World-News/Page-4.html> (referer: https://oilprice.com/Latest-Energy-News/World-News/Page-3.html)
+2020-02-03 16:22:04 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-4.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Qatar-Not-Inclined-To-Lower-LNG-Prices-To-India.html', 'date': 'Jan 27, 2020 at 16:16 ', 'time_zone': 'CST'}
+2020-02-03 16:22:04 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-4.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/US-Russian-Forces-Face-Off-Near-Syrias-Oilfields.html', 'date': 'Jan 27, 2020 at 15:12 ', 'time_zone': 'CST'}
+2020-02-03 16:22:04 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-4.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Rolls-Royce-Looks-To-Install-Mini-Nuclear-Reactors-By-2029.html', 'date': 'Jan 27, 2020 at 14:56 ', 'time_zone': 'CST'}
+2020-02-03 16:22:04 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-4.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Brazil-Decides-Against-Joining-OPEC.html', 'date': 'Jan 27, 2020 at 10:01 ', 'time_zone': 'CST'}
+2020-02-03 16:22:04 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-4.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Iraqi-Oil-Field-Resumes-Production-As-Protests-Subside.html', 'date': 'Jan 27, 2020 at 09:47 ', 'time_zone': 'CST'}
+2020-02-03 16:22:04 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-4.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Exxon-Strikes-It-Big-In-Guyana-Ups-Resource-Estimate-To-8-Billion-Barrels.html', 'date': 'Jan 27, 2020 at 09:42 ', 'time_zone': 'CST'}
+2020-02-03 16:22:04 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-4.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Increased-New-Well-Productivity-Helped-US-Shale-Growth-In-2019.html', 'date': 'Jan 24, 2020 at 17:35 ', 'time_zone': 'CST'}
+2020-02-03 16:22:04 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-4.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Why-Angry-Alberta-Landowners-Want-To-Cut-Off-Power-To-Oil-Drilling-Sites.html', 'date': 'Jan 24, 2020 at 13:25 ', 'time_zone': 'CST'}
+2020-02-03 16:22:04 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-4.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/China-Is-Key-To-Global-Fight-Against-Climate-Change.html', 'date': 'Jan 24, 2020 at 11:22 ', 'time_zone': 'CST'}
+2020-02-03 16:22:04 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-4.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Burning-Trees-For-Heating-Wont-Help-With-Climate-Change-UK-Think-Tank.html', 'date': 'Jan 24, 2020 at 09:42 ', 'time_zone': 'CST'}
+2020-02-03 16:22:05 [scrapy] DEBUG: Crawled (200) <GET https://oilprice.com/Latest-Energy-News/World-News/Page-5.html> (referer: https://oilprice.com/Latest-Energy-News/World-News/Page-4.html)
+2020-02-03 16:22:05 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-5.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Iraq-Set-To-Award-More-Gas-Exploration-Contracts.html', 'date': 'Jan 23, 2020 at 17:37 ', 'time_zone': 'CST'}
+2020-02-03 16:22:05 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-5.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Guyana-On-The-Hunt-For-Oil-Firm-To-Trade-Its-Oil.html', 'date': 'Jan 23, 2020 at 16:53 ', 'time_zone': 'CST'}
+2020-02-03 16:22:05 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-5.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/US-Shale-Must-Get-Ready-For-Energy-Transition-Oil-Banker-Says.html', 'date': 'Jan 23, 2020 at 16:07 ', 'time_zone': 'CST'}
+2020-02-03 16:22:05 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-5.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Exxon-Prepares-Sale-Of-UK-German-Oil-Gas-Assets.html', 'date': 'Jan 23, 2020 at 13:30 ', 'time_zone': 'CST'}
+2020-02-03 16:22:05 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-5.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Oil-Firms-Banker-Found-Dead-As-Ex-Sonangol-Head-Is-Charged-With-Fraud.html', 'date': 'Jan 23, 2020 at 12:17 ', 'time_zone': 'CST'}
+2020-02-03 16:22:05 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-5.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Brazil-Breaks-Oil-Production-Record.html', 'date': 'Jan 23, 2020 at 11:28 ', 'time_zone': 'CST'}
+2020-02-03 16:22:05 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-5.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Hints-At-Further-Oil-Production-Cuts.html', 'date': 'Jan 23, 2020 at 10:41 ', 'time_zone': 'CST'}
+2020-02-03 16:22:05 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-5.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Tankers-Idle-At-Libyan-Ports-As-Oil-Exports-Dry-Up.html', 'date': 'Jan 23, 2020 at 09:41 ', 'time_zone': 'CST'}
+2020-02-03 16:22:05 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-5.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Oil-Falls-Further-On-Rising-Crude-Product-Inventories.html', 'date': 'Jan 22, 2020 at 15:50 ', 'time_zone': 'CST'}
+2020-02-03 16:22:05 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-5.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/OPEC-Deal-Helps-Russia-Double-Wealth-Fund-Assets-To-124B.html', 'date': 'Jan 22, 2020 at 15:43 ', 'time_zone': 'CST'}
+2020-02-03 16:22:05 [scrapy] DEBUG: Crawled (200) <GET https://oilprice.com/Latest-Energy-News/World-News/Page-6.html> (referer: https://oilprice.com/Latest-Energy-News/World-News/Page-5.html)
+2020-02-03 16:22:06 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-6.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Behind-Closed-Doors-Big-Oil-Talks-Broader-Emission-Cuts.html', 'date': 'Jan 22, 2020 at 13:41 ', 'time_zone': 'CST'}
+2020-02-03 16:22:06 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-6.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Alexander-Novak-Keeps-Energy-Minister-Job-In-New-Russian-Cabinet.html', 'date': 'Jan 22, 2020 at 11:52 ', 'time_zone': 'CST'}
+2020-02-03 16:22:06 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-6.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Aramco-IPO-Proceeds-To-Fund-Saudi-Defense-Projects.html', 'date': 'Jan 22, 2020 at 10:13 ', 'time_zone': 'CST'}
+2020-02-03 16:22:06 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-6.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Brazil-Could-Begin-Talks-To-Join-OPEC-In-July.html', 'date': 'Jan 22, 2020 at 09:03 ', 'time_zone': 'CST'}
+2020-02-03 16:22:06 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-6.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/EIA-Sees-Shale-Production-Rise-By-Another-22000-bpd-Next-Month.html', 'date': 'Jan 21, 2020 at 17:22 ', 'time_zone': 'CST'}
+2020-02-03 16:22:06 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-6.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Libyas-NOC-Confirms-It-Virtually-Lost-All-Of-Its-Oil-Production.html', 'date': 'Jan 21, 2020 at 16:14 ', 'time_zone': 'CST'}
+2020-02-03 16:22:06 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-6.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/US-Calls-On-Libya-To-Immediately-Resume-Oil-Production.html', 'date': 'Jan 21, 2020 at 14:21 ', 'time_zone': 'CST'}
+2020-02-03 16:22:06 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-6.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/BP-Quits-Iraqs-Kirkuk-Oilfield-As-Studies-Disappoint.html', 'date': 'Jan 21, 2020 at 12:09 ', 'time_zone': 'CST'}
+2020-02-03 16:22:06 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-6.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Iraq-May-Stop-Iran-Energy-Imports-If-US-Doesnt-Extend-Waiver.html', 'date': 'Jan 21, 2020 at 11:49 ', 'time_zone': 'CST'}
+2020-02-03 16:22:06 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-6.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Low-Carbon-Projects-Are-A-Priority-For-Oil-Companies-In-2020.html', 'date': 'Jan 21, 2020 at 10:36 ', 'time_zone': 'CST'}
+2020-02-03 16:22:06 [scrapy] DEBUG: Crawled (200) <GET https://oilprice.com/Latest-Energy-News/World-News/Page-7.html> (referer: https://oilprice.com/Latest-Energy-News/World-News/Page-6.html)
+2020-02-03 16:22:06 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-7.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Nigerias-NNPC-Suffered-Over-45000-Oil-Pipeline-Breaks-In-18-Years.html', 'date': 'Jan 21, 2020 at 10:31 ', 'time_zone': 'CST'}
+2020-02-03 16:22:06 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-7.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/South-Korea-To-Send-Anti-Piracy-Ship-To-Strait-of-Hormuz.html', 'date': 'Jan 21, 2020 at 09:43 ', 'time_zone': 'CST'}
+2020-02-03 16:22:06 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-7.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Albertas-Oil-And-Gas-Company-Tax-Debt-Balloons-To-Double-The-Size.html', 'date': 'Jan 20, 2020 at 17:47 ', 'time_zone': 'CST'}
+2020-02-03 16:22:06 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-7.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/IMF-Cuts-Saudi-Arabias-Growth-Outlook-Due-To-OPEC-Oil-Cuts.html', 'date': 'Jan 20, 2020 at 17:34 ', 'time_zone': 'CST'}
+2020-02-03 16:22:06 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-7.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Guyana-Officially-Becomes-Oil-Exporter.html', 'date': 'Jan 20, 2020 at 15:44 ', 'time_zone': 'CST'}
+2020-02-03 16:22:06 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-7.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Somalia-Invites-Turkey-To-Explore-For-Offshore-Oil.html', 'date': 'Jan 20, 2020 at 12:51 ', 'time_zone': 'CST'}
+2020-02-03 16:22:06 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-7.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/At-Least-Five-Dead-In-Nigerian-Oil-Pipeline-Explosion.html', 'date': 'Jan 20, 2020 at 12:08 ', 'time_zone': 'CST'}
+2020-02-03 16:22:06 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-7.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/US-Extends-Chevron-Venezuela-Sanction-Waiver.html', 'date': 'Jan 20, 2020 at 10:00 ', 'time_zone': 'CST'}
+2020-02-03 16:22:06 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-7.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Protest-Halt-Production-At-Iraqi-Oil-Field.html', 'date': 'Jan 20, 2020 at 09:32 ', 'time_zone': 'CST'}
+2020-02-03 16:22:06 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-7.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Huge-New-Field-Sends-Norways-Oil-Production-To-9-Year-High.html', 'date': 'Jan 17, 2020 at 16:32 ', 'time_zone': 'CST'}
+2020-02-03 16:22:07 [scrapy] DEBUG: Crawled (200) <GET https://oilprice.com/Latest-Energy-News/World-News/Page-8.html> (referer: https://oilprice.com/Latest-Energy-News/World-News/Page-7.html)
+2020-02-03 16:22:07 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-8.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/France-Helps-Saudi-Arabia-Protect-Oil-Facilities-From-New-Attacks.html', 'date': 'Jan 17, 2020 at 16:29 ', 'time_zone': 'CST'}
+2020-02-03 16:22:07 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-8.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/US-Oil-Production-To-Grow-While-Energy-Emissions-Are-Set-To-Drop.html', 'date': 'Jan 17, 2020 at 13:21 ', 'time_zone': 'CST'}
+2020-02-03 16:22:07 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-8.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Japanese-Only-Operational-Nuclear-Reactor-Shut-Increasing-Fuel-Costs.html', 'date': 'Jan 17, 2020 at 12:52 ', 'time_zone': 'CST'}
+2020-02-03 16:22:07 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-8.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Angola-Set-To-Finally-Boost-Its-Oil-Production.html', 'date': 'Jan 17, 2020 at 11:47 ', 'time_zone': 'CST'}
+2020-02-03 16:22:07 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-8.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Gas-Deliveries-At-Sabine-Pass-LNG-Plant-Fall-Due-of-Fog.html', 'date': 'Jan 17, 2020 at 10:27 ', 'time_zone': 'CST'}
+2020-02-03 16:22:07 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-8.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Trans-Mountain-Expansion-Scores-Big-Win-In-Court.html', 'date': 'Jan 17, 2020 at 09:50 ', 'time_zone': 'CST'}
+2020-02-03 16:22:07 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-8.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/India-May-Significantly-Boost-US-Oil-Imports.html', 'date': 'Jan 16, 2020 at 15:34 ', 'time_zone': 'CST'}
+2020-02-03 16:22:07 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-8.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Number-Of-DUC-Wells-Plunges-In-Latest-Sign-Of-Shale-Distress.html', 'date': 'Jan 16, 2020 at 12:15 ', 'time_zone': 'CST'}
+2020-02-03 16:22:07 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-8.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/IEA-There-Wont-Be-A-Low-Sulfur-Fuel-Oil-Crisis.html', 'date': 'Jan 16, 2020 at 11:43 ', 'time_zone': 'CST'}
+2020-02-03 16:22:07 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-8.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/South-Korea-To-Boost-US-Oil-Imports-In-2020.html', 'date': 'Jan 16, 2020 at 10:16 ', 'time_zone': 'CST'}
+2020-02-03 16:22:07 [scrapy] DEBUG: Crawled (200) <GET https://oilprice.com/Latest-Energy-News/World-News/Page-9.html> (referer: https://oilprice.com/Latest-Energy-News/World-News/Page-8.html)
+2020-02-03 16:22:07 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-9.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Canadian-Crude-Prices-Sink-On-Cold-Snap.html', 'date': 'Jan 15, 2020 at 17:28 ', 'time_zone': 'CST'}
+2020-02-03 16:22:07 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-9.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Uganda-Sees-5-Billion-Costs-For-Two-Oilfield-Developments.html', 'date': 'Jan 15, 2020 at 17:17 ', 'time_zone': 'CST'}
+2020-02-03 16:22:07 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-9.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Saudi-Arabia-Says-It-Slashed-December-Oil-Production-By-300000-Bpd.html', 'date': 'Jan 15, 2020 at 16:50 ', 'time_zone': 'CST'}
+2020-02-03 16:22:07 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-9.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Tullow-Oil-Sees-15B-Write-Off-As-It-Cuts-Oil-Price-Outlook.html', 'date': 'Jan 15, 2020 at 15:44 ', 'time_zone': 'CST'}
+2020-02-03 16:22:07 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-9.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Washington-Might-Compromise-On-Fuel-Economy-Standards-Rollback.html', 'date': 'Jan 15, 2020 at 11:59 ', 'time_zone': 'CST'}
+2020-02-03 16:22:07 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-9.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Texas-Collects-Record-Amount-Of-Taxes-From-Oil-Gas.html', 'date': 'Jan 15, 2020 at 10:03 ', 'time_zone': 'CST'}
+2020-02-03 16:22:07 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-9.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Encana-Shareholders-Approve-Move-To-US-Name-Change.html', 'date': 'Jan 15, 2020 at 09:01 ', 'time_zone': 'CST'}
+2020-02-03 16:22:07 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-9.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Head-Lower-Following-Inventory-Builds.html', 'date': 'Jan 14, 2020 at 15:52 ', 'time_zone': 'CST'}
+2020-02-03 16:22:07 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-9.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Norway-Awards-69-Oil-Blocks-To-28-Firms-To-Explore-Mature-Areas.html', 'date': 'Jan 14, 2020 at 15:27 ', 'time_zone': 'CST'}
+2020-02-03 16:22:07 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-9.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Wind-Solar-To-Dominate-New-US-Power-Capacity-This-Year.html', 'date': 'Jan 14, 2020 at 13:07 ', 'time_zone': 'CST'}
+2020-02-03 16:22:08 [scrapy] DEBUG: Crawled (200) <GET https://oilprice.com/Latest-Energy-News/World-News/Page-10.html> (referer: https://oilprice.com/Latest-Energy-News/World-News/Page-9.html)
+2020-02-03 16:22:08 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-10.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Shale-Pioneer-Mark-Papa-Expect-MA-Wave-In-Shale.html', 'date': 'Jan 14, 2020 at 12:19 ', 'time_zone': 'CST'}
+2020-02-03 16:22:08 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-10.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/UAEs-ADNOC-Signs-Crude-Oil-Storage-Deal-With-Japan.html', 'date': 'Jan 14, 2020 at 11:30 ', 'time_zone': 'CST'}
+2020-02-03 16:22:08 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-10.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Saudi-Aramco-Chairman-Oil-Industry-Should-Think-In-Decades.html', 'date': 'Jan 14, 2020 at 10:23 ', 'time_zone': 'CST'}
+2020-02-03 16:22:08 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-10.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/UK-Oil-Producer-Sees-Shares-Tumble-70-On-Loan-Fraud.html', 'date': 'Jan 14, 2020 at 10:20 ', 'time_zone': 'CST'}
+2020-02-03 16:22:08 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-10.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Ontario-Government-Warns-Residents-of-Nuclear-IncidentAccidentally.html', 'date': 'Jan 14, 2020 at 09:40 ', 'time_zone': 'CST'}
+2020-02-03 16:22:08 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-10.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Worlds-Largest-Fund-Manager-Sees-Huge-Opportunity-In-Climate-Change.html', 'date': 'Jan 14, 2020 at 09:38 ', 'time_zone': 'CST'}
+2020-02-03 16:22:08 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-10.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Venezuelas-PDVSA-Uses-Foreign-Partners-To-Sell-Its-Crude.html', 'date': 'Jan 13, 2020 at 16:54 ', 'time_zone': 'CST'}
+2020-02-03 16:22:08 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-10.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Norway-Suffers-Setback-In-Quest-For-Arctic-Oil-Discoveries.html', 'date': 'Jan 13, 2020 at 16:27 ', 'time_zone': 'CST'}
+2020-02-03 16:22:08 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-10.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/UKs-Second-Largest-City-Takes-Radical-Measure-To-Curb-Pollution.html', 'date': 'Jan 13, 2020 at 15:52 ', 'time_zone': 'CST'}
+2020-02-03 16:22:08 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-10.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Tesla-Shoots-Past-500-Mark.html', 'date': 'Jan 13, 2020 at 15:44 ', 'time_zone': 'CST'}
+2020-02-03 16:22:08 [scrapy] DEBUG: Crawled (200) <GET https://oilprice.com/Latest-Energy-News/World-News/Page-11.html> (referer: https://oilprice.com/Latest-Energy-News/World-News/Page-10.html)
+2020-02-03 16:22:08 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-11.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Mnuchin-US-Works-With-China-To-Cut-Off-All-Iranian-Oil-Imports.html', 'date': 'Jan 13, 2020 at 11:18 ', 'time_zone': 'CST'}
+2020-02-03 16:22:08 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-11.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Aramco-Supersizes-IPO-Issues-More-Shares.html', 'date': 'Jan 13, 2020 at 09:31 ', 'time_zone': 'CST'}
+2020-02-03 16:22:08 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-11.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Cyber-Threats-To-North-American-Power-Grid-Are-Growing.html', 'date': 'Jan 10, 2020 at 16:07 ', 'time_zone': 'CST'}
+2020-02-03 16:22:08 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-11.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/South-Sudan-To-Assess-Environmental-Impact-Of-Oil-Production.html', 'date': 'Jan 10, 2020 at 12:51 ', 'time_zone': 'CST'}
+2020-02-03 16:22:08 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-11.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Congo-Looks-To-Seize-Oil-Licenses-From-Corrupt-Israeli-Billionaire.html', 'date': 'Jan 10, 2020 at 09:48 ', 'time_zone': 'CST'}
+2020-02-03 16:22:08 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-11.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Shell-Is-Selling-Washington-Refinery.html', 'date': 'Jan 10, 2020 at 09:28 ', 'time_zone': 'CST'}
+2020-02-03 16:22:08 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-11.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Mexicos-Mega-Oil-Hedge-Cost-Around-1-Billion.html', 'date': 'Jan 09, 2020 at 16:19 ', 'time_zone': 'CST'}
+2020-02-03 16:22:08 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-11.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/US-Oil-Producers-Slash-Jobs-To-Cut-Costs.html', 'date': 'Jan 09, 2020 at 15:42 ', 'time_zone': 'CST'}
+2020-02-03 16:22:08 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-11.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/North-America-Leads-Global-Crude-Oil-Pipeline-Additions.html', 'date': 'Jan 09, 2020 at 15:20 ', 'time_zone': 'CST'}
+2020-02-03 16:22:08 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-11.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Trump-Looks-To-Speed-Up-Oil-Pipeline-Permits-By-Dropping-Climate-Reviews.html', 'date': 'Jan 09, 2020 at 15:14 ', 'time_zone': 'CST'}
+2020-02-03 16:22:09 [scrapy] DEBUG: Crawled (200) <GET https://oilprice.com/Latest-Energy-News/World-News/Page-12.html> (referer: https://oilprice.com/Latest-Energy-News/World-News/Page-11.html)
+2020-02-03 16:22:09 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-12.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Kuwait-Expects-To-Pump-250000-Bpd-When-Neutral-Zone-Restarts.html', 'date': 'Jan 09, 2020 at 14:39 ', 'time_zone': 'CST'}
+2020-02-03 16:22:09 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-12.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/China-To-Open-Oil-Gas-Industry-to-Foreign-Companies.html', 'date': 'Jan 09, 2020 at 13:13 ', 'time_zone': 'CST'}
+2020-02-03 16:22:09 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-12.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Average-US-Natural-Gas-Prices-Hit-Three-Year-Low-In-2019.html', 'date': 'Jan 09, 2020 at 11:53 ', 'time_zone': 'CST'}
+2020-02-03 16:22:09 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-12.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Senegal-Greenlights-Start-Of-First-Oil-Field.html', 'date': 'Jan 09, 2020 at 10:32 ', 'time_zone': 'CST'}
+2020-02-03 16:22:09 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-12.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/UN-Houthis-Didnt-Launch-Attacks-On-Aramco.html', 'date': 'Jan 09, 2020 at 09:28 ', 'time_zone': 'CST'}
+2020-02-03 16:22:09 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-12.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Wildcat-Well-Comes-Up-Dry-In-Norwegian-Sea.html', 'date': 'Jan 08, 2020 at 15:12 ', 'time_zone': 'CST'}
+2020-02-03 16:22:09 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-12.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Russias-Putin-Turkeys-Erdogan-Launch-TurkStream-Gas-Pipeline.html', 'date': 'Jan 08, 2020 at 12:27 ', 'time_zone': 'CST'}
+2020-02-03 16:22:09 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-12.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Nigeria-Rescues-Foreigners-Kidnapped-In-Oil-Rich-Delta.html', 'date': 'Jan 08, 2020 at 11:16 ', 'time_zone': 'CST'}
+2020-02-03 16:22:09 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-12.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Shareholders-Want-Barclays-To-Quit-Funding-Fossil-Fuel-Companies.html', 'date': 'Jan 08, 2020 at 11:01 ', 'time_zone': 'CST'}
+2020-02-03 16:22:09 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-12.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Saudi-Tanker-Group-Halts-Strait-Of-Hormuz-Route.html', 'date': 'Jan 08, 2020 at 10:31 ', 'time_zone': 'CST'}
+2020-02-03 16:22:09 [scrapy] DEBUG: Crawled (200) <GET https://oilprice.com/Latest-Energy-News/World-News/Page-13.html> (referer: https://oilprice.com/Latest-Energy-News/World-News/Page-12.html)
+2020-02-03 16:22:09 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-13.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Iraq-Knew-The-US-Attack-Was-Going-To-Happen.html', 'date': 'Jan 08, 2020 at 09:10 ', 'time_zone': 'CST'}
+2020-02-03 16:22:09 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-13.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Soar-As-Irans-Retaliation-Begins.html', 'date': 'Jan 07, 2020 at 18:07 ', 'time_zone': 'CST'}
+2020-02-03 16:22:09 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-13.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Soaring-Gasoline-Distillate-Inventories-Offset-Large-Crude-Draw.html', 'date': 'Jan 07, 2020 at 15:50 ', 'time_zone': 'CST'}
+2020-02-03 16:22:09 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-13.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/US-Oil-Boom-Suppressed-Oil-Prices-In-2019.html', 'date': 'Jan 07, 2020 at 15:00 ', 'time_zone': 'CST'}
+2020-02-03 16:22:09 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-13.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/US-Trade-Deficit-At-Three-Year-Low-As-Oil-Imports-Dip.html', 'date': 'Jan 07, 2020 at 13:24 ', 'time_zone': 'CST'}
+2020-02-03 16:22:09 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-13.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Libya-Blames-Low-Oil-Prices-For-Tanking-Revenue.html', 'date': 'Jan 07, 2020 at 12:28 ', 'time_zone': 'CST'}
+2020-02-03 16:22:09 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-13.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Work-On-Controversial-Coastal-GasLink-Pipeline-To-Continue.html', 'date': 'Jan 07, 2020 at 12:20 ', 'time_zone': 'CST'}
+2020-02-03 16:22:09 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-13.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Massive-Strikes-In-France-Block-Exxon-Oil-Refinery.html', 'date': 'Jan 07, 2020 at 09:47 ', 'time_zone': 'CST'}
+2020-02-03 16:22:09 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-13.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Mexican-President-Decides-To-Re-Route-Crucial-Pipeline.html', 'date': 'Jan 07, 2020 at 09:26 ', 'time_zone': 'CST'}
+2020-02-03 16:22:09 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-13.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Chevron-To-Pull-US-Oil-Workers-Out-Of-Iraq.html', 'date': 'Jan 06, 2020 at 15:16 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] DEBUG: Crawled (200) <GET https://oilprice.com/Latest-Energy-News/World-News/Page-14.html> (referer: https://oilprice.com/Latest-Energy-News/World-News/Page-13.html)
+2020-02-03 16:22:10 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-14.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Brazil-Set-To-Prohibit-Taxation-On-Solar-Energy.html', 'date': 'Jan 06, 2020 at 15:01 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-14.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Engineer-Converts-Teslas-Model-3-Into-Cheaper-Hybrid.html', 'date': 'Jan 06, 2020 at 14:48 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-14.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Report-US-Should-Cut-Fossil-Fuel-Emissions-From-Buildings.html', 'date': 'Jan 06, 2020 at 13:10 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-14.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Aramco-Shares-Slump-On-Soaring-Middle-East-Tensions.html', 'date': 'Jan 06, 2020 at 12:21 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-14.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Erdogan-Turkey-Libya-May-Open-Doors-To-Foreign-Oil-Companies.html', 'date': 'Jan 06, 2020 at 10:56 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-14.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/British-Navy-To-Escort-UK-Flagged-Ships-In-Strait-of-Hormuz.html', 'date': 'Jan 06, 2020 at 09:15 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-14.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Climb-Higher-On-Huge-Crude-Inventory-Draw.html', 'date': 'Jan 03, 2020 at 10:13 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-14.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Why-Exxon-Wont-Have-To-Pay-Fine-For-Dealing-With-Rosneft.html', 'date': 'Jan 03, 2020 at 09:21 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-14.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Tullow-Continues-To-Struggle-In-The-Worlds-Hottest-Oil-Hotspot.html', 'date': 'Jan 02, 2020 at 09:36 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-14.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Russia-Ukraine-Finalize-Key-Gas-Deal.html', 'date': 'Dec 31, 2019 at 10:30 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] DEBUG: Crawled (200) <GET https://oilprice.com/Latest-Energy-News/World-News/Page-15.html> (referer: https://oilprice.com/Latest-Energy-News/World-News/Page-14.html)
+2020-02-03 16:22:10 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-15.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/China-Boosts-Oil-Product-Export-Quotas-By-More-Than-50.html', 'date': 'Dec 31, 2019 at 09:27 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-15.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Iran-Looks-To-Boost-Offshore-Oil-Production-By-85000-Bpd.html', 'date': 'Dec 30, 2019 at 10:37 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-15.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/China-Grants-Export-License-To-Teapot-Refiners.html', 'date': 'Dec 30, 2019 at 09:34 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-15.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Tesla-Scores-Landmark-Deal-For-Chinese-Factory.html', 'date': 'Dec 27, 2019 at 09:31 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-15.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Global-Superpowers-Vie-For-Power-In-Worlds-Most-Important-Oil-Chokepoint.html', 'date': 'Dec 26, 2019 at 09:12 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-15.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Assad-Plans-To-Sue-The-US-Over-Stealing-Syrias-Oil.html', 'date': 'Dec 26, 2019 at 09:06 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-15.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/This-Supermajor-Will-Market-Guyanas-First-Oil-Cargoes.html', 'date': 'Dec 26, 2019 at 09:03 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-15.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Up-As-API-Reports-Massive-Crude-Draw.html', 'date': 'Dec 26, 2019 at 07:17 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-15.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Brazil-Breaks-Key-Oil-Production-Milestone.html', 'date': 'Dec 24, 2019 at 08:39 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] DEBUG: Scraped from <200 https://oilprice.com/Latest-Energy-News/World-News/Page-15.html>
+{'news_link': 'https://oilprice.com/Latest-Energy-News/World-News/Why-UAE-Oil-Prices-Are-Falling.html', 'date': 'Dec 23, 2019 at 10:38 ', 'time_zone': 'CST'}
+2020-02-03 16:22:10 [scrapy] INFO: Closing spider (finished)
+2020-02-03 16:22:10 [scrapy] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 9824,
+ 'downloader/request_count': 16,
+ 'downloader/request_method_count/GET': 16,
+ 'downloader/response_bytes': 312366,
+ 'downloader/response_count': 16,
+ 'downloader/response_status_count/200': 16,
+ 'elapsed_time_seconds': 9.947741,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 2, 3, 9, 22, 10, 856927),
+ 'item_scraped_count': 150,
+ 'log_count/DEBUG': 166,
+ 'log_count/INFO': 7,
+ 'request_depth_max': 14,
+ 'response_received_count': 16,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 15,
+ 'scheduler/dequeued/memory': 15,
+ 'scheduler/enqueued': 15,
+ 'scheduler/enqueued/memory': 15,
+ 'start_time': datetime.datetime(2020, 2, 3, 9, 22, 0, 909186)}
+2020-02-03 16:22:10 [scrapy] INFO: Spider closed (finished)

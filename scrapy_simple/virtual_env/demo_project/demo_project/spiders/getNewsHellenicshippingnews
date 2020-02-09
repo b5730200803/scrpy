@@ -1,0 +1,30 @@
+import scrapy
+from scrapy.http import FormRequest, Request
+import json
+
+class newsHellenicSpider(scrapy.Spider):
+    name = 'hellenic'
+    statr_urls=['https://www.hellenicshippingnews.com/category/oil-energy/oil-companies-news']
+    
+    def parse(self, response):
+        for n in response.xpath("//div[@class='content']/div[@class='post-listing ']"):
+            url = n.xpath(".//h2[@class='post-title']/a/@href").extract_first()
+            print("url>>", url)
+            # yield FormRequest(url, callback=self.parse_getdetail)
+        
+    
+    
+    def parse_getdetail(self,response):
+        temp = ""
+        temp = temp + str(response.xpath("//div[@class='entry'/p/text()]")).extract()
+        title = response.xpath("//h1[@class='name post-title entry-title']/span/text()").extract_first()
+        date = response.xpath(".//span[@class='tie-date']/text()").extract_first()
+        link = str(response).split(" ")[1].replace(">", "")
+        content = temp
+        obj = {'news_link':"",'date':"",'title':"",'content':""}
+        obj['news_link'] = link
+        obj['date'] = date
+        obj['title'] = title
+        obj['content'] = content
+        yield obj 
+

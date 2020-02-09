@@ -1,0 +1,14 @@
+setup.py
+demo_project/__init__.py
+demo_project/items.py
+demo_project/middlewares.py
+demo_project/pipelines.py
+demo_project/settings.py
+demo_project/spiders/__init__.py
+demo_project/spiders/getLinkNews.py
+demo_project/spiders/stack_crawler.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
