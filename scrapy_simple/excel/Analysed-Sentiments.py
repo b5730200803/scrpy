@@ -123,7 +123,7 @@ def cutKum(trend):
                         if k.issubset(temp):
                             for j in weight_list_trade:
                                 if j[0] == i[2]:
-                                   weight = j[1]
+                                   weight = 1+j[1]
 
                         else:
                             tmp = []
@@ -184,7 +184,7 @@ def readFileNews(file):
         if selected_date != news[i][2]:
             dates.append(news[i][2])    
             selected_date = news[i][2]
-    dates.insert(0,'word')
+    dates.insert(0,'date')
     return True
 
 ##################################################################
@@ -283,6 +283,8 @@ def calWeightCountry(maximum,num):
             w[len(w)-1] = round(w1,2)
             w[len(w)-1] = round(w2,2)
 
+    
+
     return True
 ##################################################################
 def invertTable(trend):
@@ -321,7 +323,7 @@ def invertTable(trend):
 def main():
     start=datetime.now()
     file1 = "DictionaryOil_271119.xlsx"
-    file2 = "news_merge_201219.xlsx"
+    file2 = "news_merge_221219.xlsx"
     file3 = "Oil production countries_121119.xlsx"
     file4 = "TradeFlow_131119.xlsx"
     

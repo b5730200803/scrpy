@@ -28,7 +28,7 @@ def toExcel():
     print(len(news['content']))
 
     df =  DataFrame(news,columns=['news_link', 'date', 'title', 'content'])
-    export_excel = df.to_excel (r'C:\Users\supaK\Desktop\scrapy_simple\excel\excelfile\excel_detail('+date_time+').xlsx', index = None, header=True)
+    export_excel = df.to_excel (r'C:\Users\supaK\Desktop\scrapy\scrapy_simple\excel\excelfile\excel_detail('+date_time+').xlsx', index = None, header=True)
 
 def main(): 
     getNews()
