@@ -49,9 +49,9 @@ class newsSpider (scrapy.Spider):
     
     def parse_getdetail(self,response):
         temp = ""
-        temp = temp + str(response.xpath(".//div[@id='news-content']/p/text()").extract())
+        temp = temp + str(response.xpath("//div[@id='news-content']/p/text()").extract())
         if len(temp) <= 2  :
-            temp = temp + str(response.xpath(".//div[@id='news-content']/p/span/text()").extract())
+            temp = temp + str(response.xpath("//div[@id='news-content']/p/span/text()").extract())
         
         title = response.xpath("//div[@class='singleArticle__content']/h1/text()").extract_first()
         date = str(response.xpath("//div[@class='singleArticle__content']/span/text()").extract()).split("-")[1].replace("']", "")

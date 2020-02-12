@@ -3,7 +3,7 @@ import subprocess
 import json 
 import os.path
 
-subprocess.run(["scrapy","crawl", "oilnews"])
+subprocess.run(["scrapy","crawl", "hellenic"])
 
 # while True:
 #     
