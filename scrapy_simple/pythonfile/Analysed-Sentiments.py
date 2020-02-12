@@ -4,7 +4,7 @@ from pandas import DataFrame
 from dateutil.parser import parse
 from itertools import groupby
 from collections import Counter
-from loguru import logger
+# from loguru import logger
 import re
 import xlrd
 import json
@@ -16,8 +16,8 @@ import nltk
 import itertools
 
 non_bmp_map = dict.fromkeys(range(0x10000, sys.maxunicode + 1), 0xfffd)
-logger.remove()
-logger.add(sys.stdout, colorize=False)
+# logger.remove()
+# logger.add(sys.stdout, colorize=False)
 now = datetime.now()
 dateTime = now.strftime("%Y-%m-%d %H.%M.%S")
 
@@ -75,7 +75,8 @@ def cutKum(trend):
     c = 0
     for iNews in news:
         count = count+1
-        logger.debug("Count {}",count)
+        # logger.debug("Count {}",count)
+        print(count)
         c +=1
         text_datetime = dates.index(iNews[2])
         mixNews = iNews[0]+' '+iNews[1]
@@ -164,11 +165,17 @@ def readFileNews(file):
     check_key = []
     
     for i in range(1,sheet.nrows):
-        tmp_title   = sheet.cell_value(i,2).lower()
-        tmp_content = sheet.cell_value(i,3).lower()
-        tmp_date = sheet.cell_value(i,1)
+        # print(sheet.cell_value(i,0).lower())
+        # print(sheet.cell_value(i,1).lower())
+        # print(sheet.cell_value(i,2).lower())
+        # print(sheet.cell_value(i,3).lower())
+        # print("========================================")
+
+        tmp_title   = sheet.cell_value(i,3).lower()
+        tmp_content = sheet.cell_value(i,4).lower()
+        tmp_date = sheet.cell_value(i,1).split(" ",1)[0]
       
-        f3 = open("apostrophe-lower.txt","r")
+        f3 = open("file\\apostrophe-lower.txt","r")
         for line3 in f3:
             words3 = line3.split(",")
             tmp_title = tmp_title.replace(words3[1].strip().lower(),words3[0].lower())
@@ -316,16 +323,16 @@ def invertTable(trend):
     excel = json.dumps(data)
 
     df =  DataFrame(data,columns=data.keys())
-    export_excel = df.to_excel (r'C:\Users\MiniPair\Desktop\test\excel_result\export_'+pre_word+'_'+dateTime+'.xlsx', index = None, header=True)
+    export_excel = df.to_excel (r'C:\Users\supak\Desktop\scrpy\scrapy_simple\result\export_'+pre_word+'_'+dateTime+'.xlsx', index = None, header=True)
     
         
 ##################################################################
 def main():
     start=datetime.now()
-    file1 = "DictionaryOil_271119.xlsx"
-    file2 = "news_merge_221219.xlsx"
-    file3 = "Oil production countries_121119.xlsx"
-    file4 = "TradeFlow_131119.xlsx"
+    file1 = "file\DictionaryOil_271119.xlsx"
+    file2 = "excelfile\excel_detail(2020-02-11 16.50.20).xlsx"
+    file3 = "file\Oil production countries_121119.xlsx"
+    file4 = "file\TradeFlow_131119.xlsx"
     
 
     readFileDictionary(file1)
