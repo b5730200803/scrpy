@@ -330,7 +330,7 @@ def invertTable(trend):
 def main():
     start=datetime.now()
     file1 = "file\DictionaryOil_271119.xlsx"
-    file2 = "excelfile\excel_detail(2020-02-11 16.50.20).xlsx"
+    file2 = "excelfile\excel_detail(2020-02-12 09.49.09).xlsx"
     file3 = "file\Oil production countries_121119.xlsx"
     file4 = "file\TradeFlow_131119.xlsx"
     
