@@ -45,13 +45,20 @@ def getNews():
 
     
 
-def toExcel():
-    df =  DataFrame(news,columns=['news_link', 'date','time_zone', 'title', 'content'])
-    export_excel = df.to_excel (r'C:\Users\supak\Desktop\scrpy\scrapy_simple\excelfile\excel_detail('+date_time+').xlsx', index = None, header=True)
-    filename = 'excel_detail('+date_time+').xlsx'
-    
+# def toExcel():
+#     df =  DataFrame(news,columns=['news_link', 'date','time_zone', 'title', 'content'])
+#     export_excel = df.to_excel (r'C:\Users\supak\Desktop\scrpy\scrapy_simple\excelfile\excel_detail('+date_time+').xlsx', index = None, header=True)
+#     filename = 'excel_detail('+date_time+').xlsx'
+
+def toJson():
+    fileName = './' + 'virtual_env\demo_project\\' +'news'+'.json'
+    with open(fileName, 'w') as f:
+        json.dump(news, f)
+
+
 def main(): 
     getNews()
-    toExcel()
+    # toExcel()
+    toJson()
 
 main()

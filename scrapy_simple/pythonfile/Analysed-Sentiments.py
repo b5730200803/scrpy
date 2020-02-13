@@ -14,6 +14,7 @@ import numpy
 import sys
 import nltk
 import itertools
+import os.path
 
 non_bmp_map = dict.fromkeys(range(0x10000, sys.maxunicode + 1), 0xfffd)
 # logger.remove()
@@ -153,28 +154,69 @@ def cutKum(trend):
                       
     return True
 
+# ##################################################################
+# def readFileNews(file):
+#     wd = xlrd.open_workbook(file)
+#     sheet = wd.sheet_by_index(0)
+#     sheet.cell_value(0,0)
+
+#     a,b = 0,0
+#     check_in = []
+#     check_de = []
+#     check_key = []
+    
+#     for i in range(1,sheet.nrows):
+#         # print(sheet.cell_value(i,0).lower())
+#         # print(sheet.cell_value(i,1).lower())
+#         # print(sheet.cell_value(i,2).lower())
+#         # print(sheet.cell_value(i,3).lower())
+#         # print("========================================")
+
+#         tmp_title   = sheet.cell_value(i,3).lower()
+#         tmp_content = sheet.cell_value(i,4).lower()
+#         tmp_date = sheet.cell_value(i,1).split(" ",1)[0]
+      
+#         f3 = open("file\\apostrophe-lower.txt","r")
+#         for line3 in f3:
+#             words3 = line3.split(",")
+#             tmp_title = tmp_title.replace(words3[1].strip().lower(),words3[0].lower())
+#             tmp_content = tmp_content.replace(words3[1].strip().lower(),words3[0].lower())
+       
+#         news.insert(i-1,[tmp_title,tmp_content,tmp_date])
+
+    
+#     selected_date = ""
+#     news.sort(key=lambda x: x[2])
+    
+#     for i in range(len(news)):
+#         if selected_date != news[i][2]:
+#             dates.append(news[i][2])    
+#             selected_date = news[i][2]
+#     dates.insert(0,'date')
+#     return True
+
 ##################################################################
 def readFileNews(file):
-    wd = xlrd.open_workbook(file)
-    sheet = wd.sheet_by_index(0)
-    sheet.cell_value(0,0)
+    with open(os.path.abspath('virtual_env\demo_project\\news.json')) as filenews:
+        sheet = json.load(filenews)
+    # wd = xlrd.open_workbook(file)
+    # sheet = wd.sheet_by_index(0)
+    # sheet.cell_value(0,0)
 
     a,b = 0,0
     check_in = []
     check_de = []
     check_key = []
     
-    for i in range(1,sheet.nrows):
-        # print(sheet.cell_value(i,0).lower())
-        # print(sheet.cell_value(i,1).lower())
-        # print(sheet.cell_value(i,2).lower())
-        # print(sheet.cell_value(i,3).lower())
-        # print("========================================")
+    for  i in range (len(sheet['news_link'])):
+        tmp_title = sheet['time_zone'][i].lower()
+        tmp_content = sheet['content'][i].lower()
+        tmp_date = sheet['date'][i].split(" ",1)[0]
+    # print(len(sheet['title']))
+    # print(len(sheet['content']))
+    # print(len(sheet['date']))
+    # print("========================================")
 
-        tmp_title   = sheet.cell_value(i,3).lower()
-        tmp_content = sheet.cell_value(i,4).lower()
-        tmp_date = sheet.cell_value(i,1).split(" ",1)[0]
-      
         f3 = open("file\\apostrophe-lower.txt","r")
         for line3 in f3:
             words3 = line3.split(",")
