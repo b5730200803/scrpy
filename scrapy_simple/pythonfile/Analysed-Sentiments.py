@@ -33,8 +33,6 @@ dates = []
 header =[]
 news = [[0 for x in range(w)] for y in range(h)]
 table = [[0 for x in range(w)] for y in range(h)]
-increase_table = [[0 for x in range(w)] for y in range(h)]
-decrease_table = [[0 for x in range(w)] for y in range(h)]
 country_key = [[0 for x in range(w)] for y in range(h)]
 trade_flows = [[0 for x in range(w)] for y in range(h)]
 weight_list = []
@@ -80,7 +78,7 @@ def cutKum(trend):
         print(count)
         c +=1
         text_datetime = dates.index(iNews[2])
-        mixNews = iNews[0]+' '+iNews[1]
+        mixNews = iNews[0]+'. '+iNews[1]
         sentences = nltk.sent_tokenize(mixNews)
         tempKey = []
         tempCountry = []
