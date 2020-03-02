@@ -23,6 +23,7 @@ keyword = [];
 dates = [];
 increase_key = [];
 decrease_key = [];
+impactWord = [];
 w,h = 0,0;
 news = [[0 for x in range(w)] for y in range(h)]
 table = [[0 for x in range(w)] for y in range(h)]
@@ -64,18 +65,16 @@ def readFileDictionary(file):
     for i in range(1,sheet.nrows):
         if(sheet.cell_value(i,3) != ''):
             decrease_key.insert(i,sheet.cell_value(i,3).lower());
+    
+    for i in range(1,sheet.nrows):
+        if(sheet.cell_value(i,4) != ''):
+            impactWord.insert(i,sheet.cell_value(i,4).lower())
+    
     return True
-
 #################################################################################################
 def readFileNews():
     with open(os.path.abspath('virtual_env\demo_project\\news.json')) as filenews:
         sheet = json.load(filenews)
-
-    a,b = 0,0 ;
-    check_in = [];
-    check_de = [];
-    check_key = [];
-    
 
     for i in range (len(sheet['title'])):
         tmp_title = sheet['title'][i].lower();
@@ -96,7 +95,6 @@ def readFileNews():
     for i in range(len(news)):
         dates.append(news[i][2]);  
       
-    
     dates.insert(0,'date')
     return True
 #################################################################################################
@@ -170,22 +168,46 @@ def cutKum(trend):
     return True
 #################################################################################################
 def toExcel():
+    title = []
     date = []
+    increase_word = []
+    decrease_word =[] 
+    total = []
     increase = []
-    decrease =[] 
+    decrease = []
+    trend = []
+    
+    for i in range(len(news)):
+        title.append(news[i][0]);
+
     for i in range(len(table)):
         date.append(table[i][0]);
-        increase.append(table[i][1]);
-        decrease.append(table[i][2]);
+        increase_word.append(table[i][1]);
+        decrease_word.append(table[i][2]);
+        total.append(table[i][1]+table[i][2])
+        if table[i][1]+table[i][2] != 0:
+            increase.append(table[i][1]/(table[i][1]+table[i][2]))
+            decrease.append(table[i][2]/(table[i][1]+table[i][2]))
+            trend.append((table[i][1]/(table[i][1]+table[i][2])) - (table[i][2]/(table[i][1]+table[i][2])))
+        else:
+            increase.append(0)
+            decrease.append(0)
+            trend.append(0)
+
     data = {
+        "title":title,
         "date": date,
-        "increase": increase,
+        "increase_word": increase_word,
+        "decrease_word":decrease_word,
+        "total":total,
+        "increase":increase,
         "decrease":decrease,
+        "trend" : trend,
     }
     excel = json.dumps(data)
 
     df =  DataFrame(data,columns=data.keys())
-    export_excel = df.to_excel (r'C:\Users\supak\Desktop\scrpy\scrapy_simple\result\result'+dateTime+'.xlsx', index = None, header=True)
+    export_excel = df.to_excel (r'C:\Users\supak\Desktop\scrpy\scrapy_simple\result\result_'+dateTime+'.xlsx', index = None, header=True)
     
     
 #################################################################################################
@@ -199,7 +221,6 @@ def main():
     cutKum(1)
     cutKum(2)
     sorted(table, key=lambda t: t[0])
-    print(table)
     toExcel()
 
 main()
