@@ -24,27 +24,44 @@ dates = [];
 increase_key = [];
 decrease_key = [];
 impactWord = [];
+impact_value = []
 w,h = 0,0;
 news = [[0 for x in range(w)] for y in range(h)]
 table = [[0 for x in range(w)] for y in range(h)]
-
+table_impact = [[0 for x in range(w)] for y in range(h)]
+impact = []
 now = datetime.now()
 dateTime = now.strftime("%Y-%m-%d %H.%M.%S")
 #################################################################################################
-def insert_table(indexNews,date,trend,amount):
-    
-    # ถ้าเคยมีวันที่อยู่ใน list จะทำการบวกเพิ่มในคอลัมน์ที่ระบุ
-    # เมื่อ indexTrend = 1 คือ increase และ 2 คือ decrease
-    if indexNews < len(table):
-        table[indexNews][trend] += amount 
-        return True
-    
-    # ถ้ายังไม่เคยมีวันที่ จะทำการเพิ่ม list ของวันที่นั้นต่อท้าย
-    # รูปแบบ ['2019-01-01',0,0]
-    # โดย 0,0 คือ ค่าผลรวมของ increase และ decrease ตามลำดับ
-    zeros = [0,0];
-    table.insert(len(table),[date]+zeros);
-    table[len(table)-1][trend] += amount;
+def insert_table(indexNews,date,trend,amount,words):
+    temp = '';
+    for i in range(len(words)):
+        temp = temp+', '+words[i]
+    if trend == 3:
+        if indexNews < len(table_impact):
+            table_impact[indexNews][1] += amount;
+            table[indexNews][3] += temp
+            return True
+
+        zeros = [0,words];
+        table_impact.insert(len(table_impact),[date]+zeros);
+        table_impact[len(table_impact)-1][1] += amount;
+        
+    else:
+        # ถ้าเคยมีวันที่อยู่ใน list จะทำการบวกเพิ่มในคอลัมน์ที่ระบุ
+        # เมื่อ indexTrend = 1 คือ increase และ 2 คือ decrease
+        if indexNews < len(table):
+            table[indexNews][trend] += amount
+            table[indexNews][3] += temp
+            return True
+        
+        # ถ้ายังไม่เคยมีวันที่ จะทำการเพิ่ม list ของวันที่นั้นต่อท้าย
+        # รูปแบบ ['2019-01-01',0,0]
+        # โดย 0,0 คือ ค่าผลรวมของ increase และ decrease ตามลำดับ
+        
+        zeros = [0,0,temp]
+        table.insert(len(table),[date]+zeros);
+        table[len(table)-1][trend] += amount;
 
     return True
 #################################################################################################
@@ -68,8 +85,8 @@ def readFileDictionary(file):
     
     for i in range(1,sheet.nrows):
         if(sheet.cell_value(i,4) != ''):
-            impactWord.insert(i,sheet.cell_value(i,4).lower())
-    
+            impactWord.insert(i,[sheet.cell_value(i,4).lower(),sheet.cell_value(i,7)])
+
     return True
 #################################################################################################
 def readFileNews():
@@ -111,9 +128,12 @@ def cutKum(trend):
     # trend บอกพจนานุกรมของแนวโน้มราคาน้ำมัน (1 คือ แนวโน้มเพิ่มขึ้น)(2 คือแนวโน้มลดลง)
     if trend == 1:
         present_key = increase_key;
-    else:
+    elif trend == 2:
         present_key = decrease_key;
-    
+    else:
+        present_key = [];
+        for i in range(len(impactWord)):
+            present_key.append(impactWord[i][0]) 
 
     count = 0
 
@@ -162,8 +182,12 @@ def cutKum(trend):
                 # สถานะ isMatch จะบอกว่า key นั้นปรากฎใน sentense หรือเปล่า
                 if isMatch:
                     tempKey.append(dialog);
+        # print(count-1)
+        # print(date)
+        # print(trend)
+        # print(len(tempKey))
         
-        insert_table(count-1,date,trend,len(tempKey));
+        insert_table(count-1,date,trend,len(tempKey),tempKey);
         
     return True
 #################################################################################################
@@ -176,33 +200,81 @@ def toExcel():
     increase = []
     decrease = []
     trend = []
-    
+    word = []
+    value = []
+    impact_word = []
+
     for i in range(len(news)):
         title.append(news[i][0]);
-
+    
     for i in range(len(table)):
+        sum_increase_word = table[i][1];
+        sum_decrease_word = table[i][2];
+        total_sum = table[i][1]+table[i][2];
+        
+        word_found = table[i][3]
+        if len(word_found) > 0:
+            word.append(word_found.split(',',1)[1])
+        else:
+            word.append('')
+
         date.append(table[i][0]);
-        increase_word.append(table[i][1]);
-        decrease_word.append(table[i][2]);
-        total.append(table[i][1]+table[i][2])
-        if table[i][1]+table[i][2] != 0:
-            increase.append(table[i][1]/(table[i][1]+table[i][2]))
-            decrease.append(table[i][2]/(table[i][1]+table[i][2]))
-            trend.append((table[i][1]/(table[i][1]+table[i][2])) - (table[i][2]/(table[i][1]+table[i][2])))
+        increase_word.append(sum_increase_word);
+        decrease_word.append(sum_decrease_word);
+        total.append(total_sum)
+        if total_sum != 0:
+            increase.append(sum_increase_word/total_sum)
+            decrease.append(sum_decrease_word/total_sum)
+            trend.append((sum_increase_word/total_sum) - (sum_decrease_word/total_sum))
         else:
             increase.append(0)
             decrease.append(0)
             trend.append(0)
+    
+    for i in range(len(impact_value)):
+        temp = ''
+        if len(impact_value[i][0]) > 0:
+            for j in range(len(impact_value[i][0])):
+                temp = temp+', '+impact_value[i][0][j]
+            impact_word.append(temp.split(',',1)[1])
+            if trend[i] < 0:
+                if trend[i] == 0:
+                    value.append(0)
+                else:
+                    value.append((-1)*(impact_value[i][1] / len(impact_value[i][0])))
+            else:
+                if trend[i] == 0:
+                    value.append(0)
+                else:
+                    value.append(impact_value[i][1] / len(impact_value[i][0]))
+
+        else:
+            impact_word.append('')
+            if trend[i] < 0:
+                if trend[i] == 0:
+                    value.append(0)
+                else:
+                    value.append((-1)*(impact_value[i][1]))
+            else:
+                if trend[i] == 0:
+                    value.append(0)
+                else:
+                    value.append(1)
+    
+    print(len(value))
 
     data = {
-        "title":title,
+        "title_news":title,
         "date": date,
+        "words_found": word,
         "increase_word": increase_word,
         "decrease_word":decrease_word,
         "total":total,
         "increase":increase,
         "decrease":decrease,
         "trend" : trend,
+        "impact_word_found": impact_word,
+        "impact_value": value
     }
     excel = json.dumps(data)
 
@@ -210,6 +282,22 @@ def toExcel():
     export_excel = df.to_excel (r'C:\Users\supak\Desktop\scrpy\scrapy_simple\result\result_'+dateTime+'.xlsx', index = None, header=True)
     
     
+#################################################################################################
+def findImpact():
+    cutKum(3)
+    sum_impact = 0
+    for i in range(len(table_impact)): 
+        if len(table_impact[i][2]) > 0:
+            for j in range(len(table_impact[i][2])):
+                for n in range(len(impactWord)):
+                    if table_impact[i][2][j] == impactWord[n][0]:
+                        sum_impact += impactWord[n][1]
+                tmp = sum_impact
+            sum_impact = 0
+            impact_value.insert(i,[table_impact[i][2],tmp])
+        else:
+            impact_value.insert(i,['',1])
+    return True
 #################################################################################################
 def main():
     
@@ -220,6 +308,7 @@ def main():
 
     cutKum(1)
     cutKum(2)
+    findImpact()
     sorted(table, key=lambda t: t[0])
     toExcel()
 
