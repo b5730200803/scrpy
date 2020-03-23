@@ -39,7 +39,7 @@ trade_flows = [[0 for x in range(w)] for y in range(h)]
 weight_list = []
 weight_list_trade = []
 
-##################################################################
+
 def insert_table(word,indexOf,weight):
     words = ["?", "!", "(", ")", "{", "}", "'", "\"", ",", ".", ":", ";",
                  "[", "]", "…", "“", "”","^","\\r", "\\n", "\\t", "’s", "'s",
@@ -62,7 +62,7 @@ def insert_table(word,indexOf,weight):
     zeros = zeros + [0]*(len(dates)-1 - len(zeros))
     table.insert(len(table),[word]+zeros)
     table[len(table)-1][indexOf] += (1*weight)
-##################################################################
+
 def cutKum(trend):
     
     if trend == 1:
@@ -152,7 +152,7 @@ def cutKum(trend):
                       
     return True
 
-##################################################################
+
 def readFileNews(file):
     wd = xlrd.open_workbook(file)
     sheet = wd.sheet_by_index(0)
@@ -187,7 +187,7 @@ def readFileNews(file):
     dates.insert(0,'date')
     return True
 
-##################################################################
+
 def findWord(sentence,word):
     if sentence.find(' '+word) == -1 and sentence.find(' '+word+' ') == -1 and sentence.find(word+' ') == -1:
         return -1
@@ -199,7 +199,7 @@ def findWord(sentence,word):
         return sentence.find(word+' ') + len(word)+1
     else:
         return -1
-##################################################################
+
 def readFileDictionary(file):
     
     wd = xlrd.open_workbook(file)
@@ -220,7 +220,7 @@ def readFileDictionary(file):
             decrease_key.insert(i,sheet.cell_value(i,3).lower())
     return True
 
-##################################################################
+
 def readFileCountry(f1,f2):
     
     wd = xlrd.open_workbook(f1)
@@ -265,7 +265,7 @@ def readFileCountry(f1,f2):
     calWeightCountry(maximum,2)
     
     return True
-##################################################################
+
 def calWeightCountry(maximum,num):
     if num == 1:
         for w  in weight_list:
@@ -286,7 +286,7 @@ def calWeightCountry(maximum,num):
     
 
     return True
-##################################################################
+
 def invertTable(trend):
     if(trend==1):
         present_key = increase_key
@@ -316,14 +316,13 @@ def invertTable(trend):
     excel = json.dumps(data)
 
     df =  DataFrame(data,columns=data.keys())
-    export_excel = df.to_excel (r'C:\Users\MiniPair\Desktop\test\excel_result\export_'+pre_word+'_'+dateTime+'.xlsx', index = None, header=True)
+    export_excel = df.to_excel (r'C:\Users\MiniPair\Desktop\scrpy\scrapy_simple\excel\result\export_'+pre_word+'_'+dateTime+'.xlsx', index = None, header=True)
     
-        
-##################################################################
+
 def main():
     start=datetime.now()
     file1 = "DictionaryOil_271119.xlsx"
-    file2 = "news_merge_221219.xlsx"
+    file2 = "excel_detail(2020-02-11 16.50.20).xlsx"
     file3 = "Oil production countries_121119.xlsx"
     file4 = "TradeFlow_131119.xlsx"
     
@@ -332,11 +331,11 @@ def main():
     readFileCountry(file3,file4)
     readFileNews(file2)
 
-    cutKum(1)
-    cutKum(2)
-    sorted(table, key=lambda t: t[0])
-    invertTable(1)
-    invertTable(2)
+    # cutKum(1)
+    # cutKum(2)
+    # sorted(table, key=lambda t: t[0])
+    # invertTable(1)
+    # invertTable(2)
 
 
     print(datetime.now()-start)
