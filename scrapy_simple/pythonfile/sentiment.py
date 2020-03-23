@@ -94,6 +94,7 @@ def readFileNews():
         sheet = json.load(filenews)
 
     for i in range (len(sheet['title'])):
+    #for i in range (253,254):
         tmp_title = sheet['title'][i].lower();
         tmp_content = sheet['content'][i].lower();
         tmp_date = sheet['date'][i].split(" ",1)[0];
