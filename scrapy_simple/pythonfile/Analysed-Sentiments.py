@@ -4,7 +4,7 @@ from pandas import DataFrame
 from dateutil.parser import parse
 from itertools import groupby
 from collections import Counter
-from loguru import logger
+# from loguru import logger
 import re
 import xlrd
 import json
@@ -14,10 +14,11 @@ import numpy
 import sys
 import nltk
 import itertools
+import os.path
 
 non_bmp_map = dict.fromkeys(range(0x10000, sys.maxunicode + 1), 0xfffd)
-logger.remove()
-logger.add(sys.stdout, colorize=False)
+# logger.remove()
+# logger.add(sys.stdout, colorize=False)
 now = datetime.now()
 dateTime = now.strftime("%Y-%m-%d %H.%M.%S")
 
@@ -32,8 +33,6 @@ dates = []
 header =[]
 news = [[0 for x in range(w)] for y in range(h)]
 table = [[0 for x in range(w)] for y in range(h)]
-increase_table = [[0 for x in range(w)] for y in range(h)]
-decrease_table = [[0 for x in range(w)] for y in range(h)]
 country_key = [[0 for x in range(w)] for y in range(h)]
 trade_flows = [[0 for x in range(w)] for y in range(h)]
 weight_list = []
@@ -75,10 +74,11 @@ def cutKum(trend):
     c = 0
     for iNews in news:
         count = count+1
-        logger.debug("Count {}",count)
+        # logger.debug("Count {}",count)
+        print(count)
         c +=1
         text_datetime = dates.index(iNews[2])
-        mixNews = iNews[0]+' '+iNews[1]
+        mixNews = iNews[0]+'. '+iNews[1]
         sentences = nltk.sent_tokenize(mixNews)
         tempKey = []
         tempCountry = []
@@ -152,23 +152,74 @@ def cutKum(trend):
                       
     return True
 
+<<<<<<< HEAD:scrapy_simple/excel/Analysed-Sentiments.py
 
+=======
+# ##################################################################
+# def readFileNews(file):
+#     wd = xlrd.open_workbook(file)
+#     sheet = wd.sheet_by_index(0)
+#     sheet.cell_value(0,0)
+
+#     a,b = 0,0
+#     check_in = []
+#     check_de = []
+#     check_key = []
+    
+#     for i in range(1,sheet.nrows):
+#         # print(sheet.cell_value(i,0).lower())
+#         # print(sheet.cell_value(i,1).lower())
+#         # print(sheet.cell_value(i,2).lower())
+#         # print(sheet.cell_value(i,3).lower())
+#         # print("========================================")
+
+#         tmp_title   = sheet.cell_value(i,3).lower()
+#         tmp_content = sheet.cell_value(i,4).lower()
+#         tmp_date = sheet.cell_value(i,1).split(" ",1)[0]
+      
+#         f3 = open("file\\apostrophe-lower.txt","r")
+#         for line3 in f3:
+#             words3 = line3.split(",")
+#             tmp_title = tmp_title.replace(words3[1].strip().lower(),words3[0].lower())
+#             tmp_content = tmp_content.replace(words3[1].strip().lower(),words3[0].lower())
+       
+#         news.insert(i-1,[tmp_title,tmp_content,tmp_date])
+
+    
+#     selected_date = ""
+#     news.sort(key=lambda x: x[2])
+    
+#     for i in range(len(news)):
+#         if selected_date != news[i][2]:
+#             dates.append(news[i][2])    
+#             selected_date = news[i][2]
+#     dates.insert(0,'date')
+#     return True
+
+##################################################################
+>>>>>>> 587da5af686d8f44c7a2f7110bccb4afae8a4ea9:scrapy_simple/pythonfile/Analysed-Sentiments.py
 def readFileNews(file):
-    wd = xlrd.open_workbook(file)
-    sheet = wd.sheet_by_index(0)
-    sheet.cell_value(0,0)
+    with open(os.path.abspath('virtual_env\demo_project\\news.json')) as filenews:
+        sheet = json.load(filenews)
+    # wd = xlrd.open_workbook(file)
+    # sheet = wd.sheet_by_index(0)
+    # sheet.cell_value(0,0)
 
     a,b = 0,0
     check_in = []
     check_de = []
     check_key = []
     
-    for i in range(1,sheet.nrows):
-        tmp_title   = sheet.cell_value(i,2).lower()
-        tmp_content = sheet.cell_value(i,3).lower()
-        tmp_date = sheet.cell_value(i,1)
-      
-        f3 = open("apostrophe-lower.txt","r")
+    for  i in range (len(sheet['news_link'])):
+        tmp_title = sheet['time_zone'][i].lower()
+        tmp_content = sheet['content'][i].lower()
+        tmp_date = sheet['date'][i].split(" ",1)[0]
+    # print(len(sheet['title']))
+    # print(len(sheet['content']))
+    # print(len(sheet['date']))
+    # print("========================================")
+
+        f3 = open("file\\apostrophe-lower.txt","r")
         for line3 in f3:
             words3 = line3.split(",")
             tmp_title = tmp_title.replace(words3[1].strip().lower(),words3[0].lower())
@@ -316,15 +367,26 @@ def invertTable(trend):
     excel = json.dumps(data)
 
     df =  DataFrame(data,columns=data.keys())
+<<<<<<< HEAD:scrapy_simple/excel/Analysed-Sentiments.py
     export_excel = df.to_excel (r'C:\Users\MiniPair\Desktop\scrpy\scrapy_simple\excel\result\export_'+pre_word+'_'+dateTime+'.xlsx', index = None, header=True)
+=======
+    export_excel = df.to_excel (r'C:\Users\supak\Desktop\scrpy\scrapy_simple\result\export_'+pre_word+'_'+dateTime+'.xlsx', index = None, header=True)
+>>>>>>> 587da5af686d8f44c7a2f7110bccb4afae8a4ea9:scrapy_simple/pythonfile/Analysed-Sentiments.py
     
 
 def main():
     start=datetime.now()
+<<<<<<< HEAD:scrapy_simple/excel/Analysed-Sentiments.py
     file1 = "DictionaryOil_271119.xlsx"
     file2 = "excel_detail(2020-02-11 16.50.20).xlsx"
     file3 = "Oil production countries_121119.xlsx"
     file4 = "TradeFlow_131119.xlsx"
+=======
+    file1 = "file\DictionaryOil_271119.xlsx"
+    file2 = "excelfile\excel_detail(2020-02-12 09.49.09).xlsx"
+    file3 = "file\Oil production countries_121119.xlsx"
+    file4 = "file\TradeFlow_131119.xlsx"
+>>>>>>> 587da5af686d8f44c7a2f7110bccb4afae8a4ea9:scrapy_simple/pythonfile/Analysed-Sentiments.py
     
 
     readFileDictionary(file1)

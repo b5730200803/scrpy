@@ -52,6 +52,7 @@ class newsSpider (scrapy.Spider):
         temp = temp + str(response.xpath("//div[@id='news-content']/p/text()").extract())
         if len(temp) <= 2  :
             temp = temp + str(response.xpath("//div[@id='news-content']/p/span/text()").extract())
+        
         title = response.xpath("//div[@class='singleArticle__content']/h1/text()").extract_first()
         date = str(response.xpath("//div[@class='singleArticle__content']/span/text()").extract()).split("-")[1].replace("']", "")
         content = temp
@@ -59,7 +60,7 @@ class newsSpider (scrapy.Spider):
         obj = {'news_link':"",'date':"",'title':"",'content':""}
         obj['news_link'] = link
         obj['date'] = date
-        obj['title'] = title
+        obj['title'] = title            
         obj['content'] = content
 
         with open(os.path.abspath('data.json'),"r") as jsonFile:
