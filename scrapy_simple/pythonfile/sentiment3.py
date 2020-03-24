@@ -3,6 +3,7 @@ from datetime import datetime
 from dateutil.parser import parse
 from itertools import groupby
 from collections import Counter
+from openpyxl import load_workbook
 
 import re
 import xlrd
@@ -23,7 +24,7 @@ dates = []
 w, h = 0, 0
 news = [[0 for x in range(w)] for y in range(h)]
 table = [[0 for x in range(w)] for y in range(h)]
-
+data = {}
 
 now = datetime.now()
 dateTime = now.strftime("%Y-%m-%d %H.%M.%S")
@@ -32,7 +33,6 @@ dateTime = now.strftime("%Y-%m-%d %H.%M.%S")
 
 
 def invertTable(trend):
-
     if(trend == 1):
         present_key = increase_key
         pre_word = "increase"
@@ -64,11 +64,23 @@ def invertTable(trend):
             for j in range(len(dates)-1):
                 data[present_key[i]].append(0)
 
-    path = r'C:\Users\MiniPair\Desktop\scrpy\scrapy_simple\result\export_' + \
-        pre_word+'_'+dateTime+'.xlsx'
     excel = json.dumps(data)
-    df = pd.DataFrame(data, columns=data.keys())
-    export_excel = df.to_excel(path, index=None, header=True)
+    if trend == 1:
+        path = r'C:\Users\MiniPair\Desktop\scrpy\scrapy_simple\result\export_' + dateTime+'.xlsx'
+        writer = pd.ExcelWriter(path, engine='xlsxwriter')
+        df = pd.DataFrame(data, columns=data.keys())
+        df.to_excel(writer, sheet_name=pre_word)
+        writer.save()
+        writer.close()
+    else:
+        path = r'C:\Users\MiniPair\Desktop\scrpy\scrapy_simple\result\export_' + dateTime+'.xlsx'
+        book = load_workbook(path)
+        writer = pd.ExcelWriter(path, engine='openpyxl')
+        writer.book = book
+        df = pd.DataFrame(data, columns=data.keys())
+        df.to_excel(writer, sheet_name=pre_word)
+        writer.save()
+        writer.close()
 
 #################################################################################################
 #################################################################################################
@@ -216,9 +228,11 @@ def main():
     readFileDictionary(dictionaryFile)
     readFileNews()
     cutKum(1)
-    cutKum(2)
     sorted(table, key=lambda t: t[0])
     invertTable(1)
+
+    cutKum(2)
+    sorted(table, key=lambda t: t[0])
     invertTable(2)
 
 
