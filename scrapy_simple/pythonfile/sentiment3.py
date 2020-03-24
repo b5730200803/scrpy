@@ -9,7 +9,7 @@ import xlrd
 import json
 import sorting
 import time
-import numpy
+import numpy as np
 import sys
 import nltk
 import itertools
@@ -40,36 +40,35 @@ def invertTable(trend):
         present_key = decrease_key
         pre_word = "decrease"
 
-    # สร้าง object data เพื่อเก็บ array ข้อมูล
     data = {}
-    # header index ที่ 0 เก็บค่าตาราง datas index ที่ 0 ไว้ มีคำว่า 'date'
     header = [dates[0]]
     data[dates[0]] = []
-
-    for i in range(1, len(present_key)):
+    temp = []
+    for i in range(len(present_key)):
         header.append(present_key[i])
-        data[header[i]] = []
-        for j in range(1, len(dates)):
-            data[header[i]].append(0)
+        data[header[i+1]] = []
 
     for j in range(1, len(table[0])):
         data[dates[0]].append(dates[j])
-        # for i in range(len(table)):
-        #     if table[i][0] not in present_key:
-        #         continue
-        #     else:
-        #         data[table[i][0]].append(table[i][j])
+        temp = []
+        for i in range(len(table)):
+            if table[i][0] not in present_key:
+                continue
+            else:
+                if table[i][0] not in temp:
+                    data[table[i][0]].append(table[i][j])
+                    temp.append(table[i][0])
 
-    # for i in range (0,len(data)):
-    #    print(header[i])
+    for i in range(len(present_key)):
+        if len(data[present_key[i]]) == 0:
+            for j in range(len(dates)-1):
+                data[present_key[i]].append(0)
 
-    for i in range(len(table)):
-        data[table[i][0]] = table[i][1:]
-
+    path = r'C:\Users\MiniPair\Desktop\scrpy\scrapy_simple\result\export_' + \
+        pre_word+'_'+dateTime+'.xlsx'
     excel = json.dumps(data)
     df = pd.DataFrame(data, columns=data.keys())
-    export_excel = df.to_excel(r'C:\Users\MiniPair\Desktop\scrpy\scrapy_simple\result\export_' +
-                               pre_word+'_'+dateTime+'.xlsx', index=None, header=True)
+    export_excel = df.to_excel(path, index=None, header=True)
 
 #################################################################################################
 #################################################################################################
@@ -217,8 +216,10 @@ def main():
     readFileDictionary(dictionaryFile)
     readFileNews()
     cutKum(1)
+    cutKum(2)
     sorted(table, key=lambda t: t[0])
     invertTable(1)
+    invertTable(2)
 
 
 main()
