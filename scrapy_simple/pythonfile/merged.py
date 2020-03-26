@@ -6,21 +6,28 @@ import datetime
 news = {
     'news_link': [],
     'date': [],
-    'time_zone':[],
+    'time_zone': [],
     'title': [],
-    'content':[],
-    
+    'content': [],
+
 }
 now = datetime.datetime.now()
 date_time = now.strftime("%Y-%m-%d %H.%M.%S")
 
+
 def getNews():
-    with open(os.path.abspath('virtual_env\demo_project\data.json')) as f:
+    with open(os.path.abspath("C:\\Users\\MiniPair\\Desktop\\scrpy\\scrapy_simple\\virtual_env\\demo_project\\data.json")) as f:
         data = json.load(f)
-        sorted_data = sorted(data, key=lambda x: datetime.datetime.strptime(x['date'].replace(" CST", "") , ' %b %d, %Y, %I:%M %p'), reverse = True)
+        for line in data:
+            dateInfo = line['date'].split(" ")
+            line['date'] = line['date'].replace(dateInfo[len(dateInfo)-1], "")
+
+        sorted_data = sorted(data, key=lambda x: datetime.datetime.strptime(
+            x['date'], ' %b %d, %Y, %I:%M %p '), reverse=True)
         for line in sorted_data:
-            temp = line['date'].replace(" CST", "")
-            line['date'] = datetime.datetime.strptime(temp ,' %b %d, %Y, %I:%M %p')
+            # temp = line['date'].replace(" CST", "")
+            # line['date'] = datetime.datetime.strptime(
+            #     temp, ' %b %d, %Y, %I:%M %p')
 
             news['news_link'].append(str(line['news_link']))
             news['date'].append(str(line['date']))
@@ -28,22 +35,23 @@ def getNews():
             news['title'].append(str(line['title']))
             news['content'].append(str(line['content']))
 
-    with open(os.path.abspath('virtual_env\demo_project\data2.json')) as f2:
+    with open(os.path.abspath("C:\\Users\\MiniPair\\Desktop\\scrpy\\scrapy_simple\\virtual_env\\demo_project\\data2.json")) as f2:
         data = json.load(f2)
-        sorted_data = sorted(data, key=lambda x: datetime.datetime.strptime(x['date'].split(" ",1)[0] , '%d/%m/%Y'), reverse = True)
-        
+        sorted_data = sorted(data, key=lambda x: datetime.datetime.strptime(
+            x['date'].split(" ", 1)[0], '%d/%m/%Y'), reverse=True)
+
         for line in sorted_data:
             temp = line['date'].split(" ")
             line['date'] = temp[0]+" "+temp[2]
-            line['date'] = datetime.datetime.strptime(line['date'], '%d/%m/%Y %H.%M.%S')
-            
+            line['date'] = datetime.datetime.strptime(
+                line['date'], '%d/%m/%Y %H.%M.%S')
+
             news['news_link'].append(str(line['news_link']))
             news['date'].append(str(line['date']))
             news['time_zone'].append('CIT')
             news['title'].append(str(line['title']))
             news['content'].append(str(line['content']))
 
-    
 
 # def toExcel():
 #     df =  DataFrame(news,columns=['news_link', 'date','time_zone', 'title', 'content'])
@@ -51,14 +59,15 @@ def getNews():
 #     filename = 'excel_detail('+date_time+').xlsx'
 
 def toJson():
-    fileName = './' + 'virtual_env\demo_project\\' +'news'+'.json'
+    fileName = './' + 'virtual_env\demo_project\\' + 'news'+'.json'
     with open(fileName, 'w') as f:
         json.dump(news, f)
 
 
-def main(): 
+def main():
     getNews()
     # toExcel()
     toJson()
+
 
 main()

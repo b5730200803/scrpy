@@ -7,9 +7,6 @@ import sys
 import datetime
 sys.path.insert(0, '/scrpy/scrapy_simple/pythonfile/')
 
-# subprocess.run(["scrapy","crawl", "oilnews"])
-
-
 def runScrapy():
     path = str(sys.path[1])
     subprocess.Popen([r''+path+'\\run.bat'])
@@ -17,7 +14,6 @@ def runScrapy():
     subprocess.call(['ls', '-1'], shell=True)
     subprocess.run(["scrapy", "crawl", "oilnews"])
     subprocess.run(["scrapy", "crawl", "hellenic"])
-   
 
     return True
 ##############################################################################################################
