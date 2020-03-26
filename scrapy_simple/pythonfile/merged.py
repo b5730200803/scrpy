@@ -59,7 +59,7 @@ def getNews():
 #     filename = 'excel_detail('+date_time+').xlsx'
 
 def toJson():
-    fileName = './' + 'virtual_env\demo_project\\' + 'news'+'.json'
+    fileName = 'C:\\Users\\MiniPair\\Desktop\\scrpy\\scrapy_simple\\virtual_env\\demo_project\\' + 'news'+'.json'
     with open(fileName, 'w') as f:
         json.dump(news, f)
 

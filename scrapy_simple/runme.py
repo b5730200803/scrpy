@@ -5,10 +5,17 @@ import json
 import os.path
 import sys
 import datetime
-sys.path.insert(0, '/scrpy/scrapy_simple/pythonfile/')
 
-def runScrapy():
-    path = str(sys.path[1])
+
+def runSentiment(path):
+    os.chdir(path+'\\pythonfile\\')
+    subprocess.Popen([sys.executable, "sentiment3.py"])
+    return True
+##############################################################################################################
+
+
+def runScrapy(path):
+
     subprocess.Popen([r''+path+'\\run.bat'])
     os.chdir(path+'\\virtual_env\\demo_project\\')
     subprocess.call(['ls', '-1'], shell=True)
@@ -20,7 +27,9 @@ def runScrapy():
 
 
 def main():
-    runScrapy()
+    path = str(sys.path[0])
+    runScrapy(path)
+    runSentiment(path)
     return True
 
 
