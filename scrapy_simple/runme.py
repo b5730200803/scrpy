@@ -1,26 +1,30 @@
-import time 
+import time
 import subprocess
-import json 
+import json
 import os.path
 import sys
-sys.path.insert(0,'/scrpy/scrapy_simple/pythonfile/')
+import datetime
+sys.path.insert(0, '/scrpy/scrapy_simple/pythonfile/')
 
-# # from pythonfile import merged
-
+#from pythonfile import merged
 # subprocess.run(["scrapy","crawl", "oilnews"])
 
 
+def runScrapy():
+    # path = str(sys.path[1])
+    # subprocess.Popen([r''+path+'\\run.bat'])
+    # os.chdir(path+'\\virtual_env\\demo_project\\demo_project')
+    # subprocess.call(['ls', '-1'], shell=True)
+    # subprocess.run(["scrapy", "crawl", "oilnews"])
 
-
-# # while True:
-    
-# #     time.sleep(10)
-
-def main():
-    
-
+    return True
 ##############################################################################################################
 
-main()
 
-    
+def main():
+    runScrapy()
+    return True
+
+
+##############################################################################################################
+main()
