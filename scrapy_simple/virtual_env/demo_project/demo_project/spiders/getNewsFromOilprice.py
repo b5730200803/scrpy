@@ -5,12 +5,6 @@ import json
 import os.path
 
 list_json = []
-# time_zone = []
-nameTimeZone = ''
-# timeZone = open(
-#     "C:\\Users\\MiniPair\\Desktop\\scrpy\\scrapy_simple\\file\\timezone.txt", "r")
-# for line in timeZone:
-#     time_zone.append(line)
 
 with open(os.path.abspath('C:\\Users\\MiniPair\\Desktop\\scrpy\\scrapy_simple\\virtual_env\\demo_project\\data.json')) as file:
     data = json.load(file)
