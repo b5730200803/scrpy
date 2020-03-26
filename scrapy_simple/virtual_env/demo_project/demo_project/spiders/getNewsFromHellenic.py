@@ -46,7 +46,6 @@ class getDetail (scrapy.Spider):
             page_num = page_num + 1
             next_page_link = response.urljoin(
                 "https://www.hellenicshippingnews.com/category/oil-energy/oil-companies-news/page/"+str(page_num)+"/")
-            print(next_page_link)
             yield scrapy.Request(url=next_page_link, callback=self.parse)
 
     def parse_getdetail(self, response):

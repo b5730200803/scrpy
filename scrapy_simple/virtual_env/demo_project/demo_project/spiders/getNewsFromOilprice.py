@@ -6,7 +6,7 @@ import os.path
 
 list_json = []
 
-with open(os.path.abspath('C:\\Users\\MiniPair\\Desktop\\scrpy\\scrapy_simple\\virtual_env\\demo_project\\data.json')) as file:
+with open(os.path.abspath("C:\\Users\\MiniPair\\Desktop\\scrpy\\scrapy_simple\\virtual_env\\demo_project\\data.json")) as file:
     data = json.load(file)
     for line in data:
         dateInfo = line['date'].split(" ")
