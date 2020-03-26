@@ -17,7 +17,7 @@ with open(os.path.abspath('C:\\Users\\MiniPair\\Desktop\\scrpy\\scrapy_simple\\v
     for line in data:
         dateInfo = line['date'].split(" ")
         line['date'] = line['date'].replace(dateInfo[len(dateInfo)-1], "")
-        print('"'+line['date']+'"')
+        # print('"'+line['date']+'"')
 
     sorted_data = sorted(data, key=lambda x: datetime.datetime.strptime(
         x['date'], ' %b %d, %Y, %I:%M %p '), reverse=True)
@@ -71,7 +71,8 @@ class newsSpider (scrapy.Spider):
         temp = ""
         temp = temp + \
             str(response.xpath("//div[@id='news-content']/p/text()").extract())
-        if len(temp) <= 2:
+
+        if len(temp) <= 200:
             temp = temp + \
                 str(response.xpath(
                     "//div[@id='news-content']/p/span/text()").extract())
@@ -81,7 +82,7 @@ class newsSpider (scrapy.Spider):
         date = str(response.xpath(
             "//div[@class='singleArticle__content']/span/text()").extract()).split("-")[1].replace("']", "")
         content = temp
-        
+
         link = str(response).split(" ")[1].replace(">", "")
         obj = {'news_link': "", 'date': "", 'title': "", 'content': ""}
         obj['news_link'] = link
