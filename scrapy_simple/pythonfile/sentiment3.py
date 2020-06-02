@@ -66,14 +66,14 @@ def invertTable(trend):
 
     excel = json.dumps(data)
     if trend == 1:
-        path = r'C:\\Users\\MiniPair\\Desktop\\scrpy\\scrapy_simple\\result\\export_' + dateTime+'.xlsx'
+        path = r'C:\\Users\\supak\\Desktop\\scrpy\\scrapy_simple\\result\\export_' + dateTime+'.xlsx'
         writer = pd.ExcelWriter(path, engine='xlsxwriter')
         df = pd.DataFrame(data, columns=data.keys())
         df.to_excel(writer, sheet_name=pre_word)
         writer.save()
         writer.close()
     else:
-        path = r'C:\\Users\\MiniPair\\Desktop\\scrpy\\scrapy_simple\\result\\export_' + dateTime+'.xlsx'
+        path = r'C:\\Users\\supak\\Desktop\\scrpy\\scrapy_simple\\result\\export_' + dateTime+'.xlsx'
         book = load_workbook(path)
         writer = pd.ExcelWriter(path, engine='openpyxl')
         writer.book = book
@@ -126,7 +126,7 @@ def readFileDictionary(file):
 
 
 def readFileNews():
-    with open(os.path.abspath('C:\\Users\\MiniPair\\Desktop\\scrpy\\scrapy_simple\\virtual_env\\demo_project\\news.json')) as filenews:
+    with open(os.path.abspath('C:\\Users\\supak\\Desktop\\scrpy\\scrapy_simple\\virtual_env\\demo_project\\news.json')) as filenews:
         sheet = json.load(filenews)
 
     for i in range(len(sheet['title'])):
@@ -135,7 +135,7 @@ def readFileNews():
         tmp_date = sheet['date'][i].split(" ", 1)[0]
 
         f3 = open(
-            "C:\\Users\\MiniPair\\Desktop\\scrpy\\scrapy_simple\\file\\apostrophe-lower.txt", "r")
+            "C:\\Users\\supak\\Desktop\\scrpy\\scrapy_simple\\file\\apostrophe-lower.txt", "r")
         for line3 in f3:
             words3 = line3.split(",")
             tmp_title = tmp_title.replace(
@@ -225,7 +225,7 @@ def cutKum(trend):
 
 def main():
     start = datetime.now()
-    dictionaryFile = "C:\\Users\\MiniPair\\Desktop\\scrpy\\scrapy_simple\\file\\DictionaryOil_270220.xlsx"
+    dictionaryFile = "C:\\Users\\supak\\Desktop\\scrpy\\scrapy_simple\\file\\DictionaryOil_270220.xlsx"
     readFileDictionary(dictionaryFile)
     readFileNews()
     cutKum(1)
