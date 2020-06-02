@@ -3,6 +3,7 @@ import datetime
 from scrapy.http import FormRequest, Request
 import json
 import os.path
+import unidecode 
 
 list_json = []
 with open(os.path.abspath('data.json')) as file:
@@ -49,11 +50,10 @@ class newsSpider (scrapy.Spider):
     
     def parse_getdetail(self,response):
         temp = ""
-        temp = temp + str(response.xpath("//div[@id='news-content']/p/text()").extract())
-        if len(temp) <= 2  :
-            temp = temp + str(response.xpath("//div[@id='news-content']/p/span/text()").extract())
-        
-        title = response.xpath("//div[@class='singleArticle__content']/h1/text()").extract_first()
+        for i in response.css('div#news-content > p:nth-child(n+1)'):
+            temp = temp + unidecode.unidecode(str(''.join(i.xpath('descendant-or-self::text()').extract())).replace('\n', ""))
+                
+        title = unidecode.unidecode(response.xpath("//div[@class='singleArticle__content']/h1/text()").extract_first())
         date = str(response.xpath("//div[@class='singleArticle__content']/span/text()").extract()).split("-")[1].replace("']", "")
         content = temp
         link = str(response).split(" ")[1].replace(">", "")
