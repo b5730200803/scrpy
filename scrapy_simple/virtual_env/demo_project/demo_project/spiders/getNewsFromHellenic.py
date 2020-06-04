@@ -7,7 +7,7 @@ import datetime
 now = datetime.datetime.now()
 date_time = now.strftime("%Y-%m-%d %H.%M.%S")
 
-with open(os.path.abspath('C:\\Users\\MiniPair\\Desktop\\scrpy\\scrapy_simple\\virtual_env\demo_project\\data2.json')) as file:
+with open(os.path.abspath('C:\\Users\\supak\\Desktop\\scrpy\\scrapy_simple\\virtual_env\demo_project\\data2.json')) as file:
     data = json.load(file)
     sorted_data = sorted(data, key=lambda x: datetime.datetime.strptime(
         x['date'].split(" ", 1)[0], '%d/%m/%Y'), reverse=True)
