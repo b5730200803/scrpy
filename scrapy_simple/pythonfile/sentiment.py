@@ -128,11 +128,14 @@ def readFileDictionary(file):
 def readFileNews():
     with open(os.path.abspath('C:\\Users\\supak\\Desktop\\scrpy\\scrapy_simple\\virtual_env\\demo_project\\news.json')) as filenews:
         sheet = json.load(filenews)
-
+    
     for i in range(len(sheet['title'])):
         tmp_title = sheet['title'][i].lower()
         tmp_content = sheet['content'][i].lower()
-        tmp_date = sheet['date'][i].split(" ", 1)[0]
+        tmp_date = sheet['date'][i].split(" ",1)[1].split(",",2)
+        tmp_date = tmp_date[0] + tmp_date[1]
+        date = datetime.strptime(tmp_date,'%b %d %Y')
+        date = str(date).split(" ",1)[0]
 
         f3 = open(
             "C:\\Users\\supak\\Desktop\\scrpy\\scrapy_simple\\file\\apostrophe-lower.txt", "r")
@@ -143,7 +146,7 @@ def readFileNews():
             tmp_content = tmp_content.replace(
                 words3[1].strip().lower(), words3[0].lower())
 
-        news.insert(i-1, [tmp_title, tmp_content, tmp_date])
+        news.insert(i-1, [tmp_title, tmp_content, date])
 
     news.sort(key=lambda x: x[2])
 
@@ -192,6 +195,7 @@ def cutKum(trend):
         for sentense in content:
             # วนอ่่านแต่ละ key ใน พจนานุกรมแนวโน้มราคาน้ำมัน
             # เรียกแทนว่า dialog
+            print(sentense)
             for dialog in present_key:
                 isMatch = True
                 subSen = sentense
