@@ -195,7 +195,6 @@ def cutKum(trend):
         for sentense in content:
             # วนอ่่านแต่ละ key ใน พจนานุกรมแนวโน้มราคาน้ำมัน
             # เรียกแทนว่า dialog
-            print(sentense)
             for dialog in present_key:
                 isMatch = True
                 subSen = sentense
