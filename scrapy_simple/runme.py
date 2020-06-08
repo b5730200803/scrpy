@@ -17,7 +17,7 @@ def runSentiment(path):
 def runScrapy(path):
     subprocess.Popen([r''+path+'\\run.bat'])
     os.chdir(path+'\\virtual_env\\demo_project\\')
-    subprocess.call(['ls', '-1'], shell=True)
+    subprocess.call(['ls', '-l'], shell=True)
     subprocess.run(["scrapy", "crawl", "oilnews"])
 
     return True
