@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 import json
 import os.path
 import datetime
+import sys
+
 news = {
     'news_link': [],
     'date': [],
@@ -15,8 +17,8 @@ now = datetime.datetime.now()
 date_time = now.strftime("%Y-%m-%d %H.%M.%S")
 
 
-def getNews():
-    with open(os.path.abspath("C:\\Users\\supak\\Desktop\\scrpy\\scrapy_simple\\virtual_env\\demo_project\\data.json")) as f:
+def getNews(path):
+    with open(os.path.abspath( path + '\\virtual_env\\demo_project\\data.json')) as f:
         data = json.load(f)
         for line in data:
             dateInfo = line['date'].split(" ")
@@ -32,16 +34,16 @@ def getNews():
             news['content'].append(str(line['content']))
 
 
-def toJson():
-    fileName = 'C:\\Users\\supak\\Desktop\\scrpy\\scrapy_simple\\virtual_env\\demo_project\\' + 'news'+'.json'
+def toJson(path):
+    fileName = path + '\\virtual_env\\demo_project\\' + 'news'+'.json'
     with open(fileName, 'w') as f:
         json.dump(news, f)
 
 
 def main():
-    getNews()
-    # toExcel()
-    toJson()
+    path = sys.path[0].replace('\\pythonfile', '')
+    getNews(path)
+    toJson(path)
 
 
 main()

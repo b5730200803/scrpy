@@ -32,7 +32,7 @@ dateTime = now.strftime("%Y-%m-%d %H.%M.%S")
 #################################################################################################
 
 
-def invertTable(trend):
+def invertTable(trend,path):
     if(trend == 1):
         present_key = increase_key
         pre_word = "increase"
@@ -66,16 +66,16 @@ def invertTable(trend):
 
     excel = json.dumps(data)
     if trend == 1:
-        path = r'C:\\Users\\supak\\Desktop\\scrpy\\scrapy_simple\\result\\export_' + dateTime+'.xlsx'
-        writer = pd.ExcelWriter(path, engine='xlsxwriter')
+        p = path + '\\result\\export_' + dateTime +'.xlsx'
+        writer = pd.ExcelWriter(p, engine='xlsxwriter')
         df = pd.DataFrame(data, columns=data.keys())
         df.to_excel(writer, sheet_name=pre_word)
         writer.save()
         writer.close()
     else:
-        path = r'C:\\Users\\supak\\Desktop\\scrpy\\scrapy_simple\\result\\export_' + dateTime+'.xlsx'
-        book = load_workbook(path)
-        writer = pd.ExcelWriter(path, engine='openpyxl')
+        p = path + '\\result\\export_' + dateTime +'.xlsx'
+        book = load_workbook(p)
+        writer = pd.ExcelWriter(p, engine='openpyxl')
         writer.book = book
         df = pd.DataFrame(data, columns=data.keys())
         df.to_excel(writer, sheet_name=pre_word)
@@ -125,8 +125,8 @@ def readFileDictionary(file):
 #################################################################################################
 
 
-def readFileNews():
-    with open(os.path.abspath('C:\\Users\\supak\\Desktop\\scrpy\\scrapy_simple\\virtual_env\\demo_project\\news.json')) as filenews:
+def readFileNews(path):
+    with open(os.path.abspath(path + '\\virtual_env\\demo_project\\news.json')) as filenews:
         sheet = json.load(filenews)
     
     for i in range(len(sheet['title'])):
@@ -138,7 +138,7 @@ def readFileNews():
         date = str(date).split(" ",1)[0]
 
         f3 = open(
-            "C:\\Users\\supak\\Desktop\\scrpy\\scrapy_simple\\file\\apostrophe-lower.txt", "r")
+            path + "\\file\\apostrophe-lower.txt", "r")
         for line3 in f3:
             words3 = line3.split(",")
             tmp_title = tmp_title.replace(
@@ -228,17 +228,19 @@ def cutKum(trend):
 
 
 def main():
+
+    path = sys.path[0].replace('\\pythonfile', '')
     start = datetime.now()
-    dictionaryFile = "C:\\Users\\supak\\Desktop\\scrpy\\scrapy_simple\\file\\DictionaryOil_270220.xlsx"
+    dictionaryFile = path + "\\file\\DictionaryOil_270220.xlsx"
     readFileDictionary(dictionaryFile)
-    readFileNews()
+    readFileNews(path)
     cutKum(1)
     sorted(table, key=lambda t: t[0])
-    invertTable(1)
+    invertTable(1,path)
 
     cutKum(2)
     sorted(table, key=lambda t: t[0])
-    invertTable(2)
+    invertTable(2,path)
 
 
 main()

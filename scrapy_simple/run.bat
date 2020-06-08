@@ -1,3 +1,3 @@
 @echo off
 
-cmd /k "cd /d C:\Users\MiniPair\Desktop\scrpy\scrapy_simple\virtual_env\Scripts  & activate"
+cmd /k "cd /d C:\Users\supak\Desktop\scrpy\scrapy_simple\virtual_env\Scripts  & activate"
